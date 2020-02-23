@@ -43,3 +43,5 @@ https://ez3c.tw/2043
 https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?viewmode=compact&topic_id=17538&forum=7
 http://blog.adahsu.net/2007/11/ssh-reverse-tunnel.html
 https://codertw.com/%E4%BC%BA%E6%9C%8D%E5%99%A8/377688/
+這篇講 ssh tunnel 最清楚
+https://yu-jack.github.io/2019/01/08/ssh-tunnel/
