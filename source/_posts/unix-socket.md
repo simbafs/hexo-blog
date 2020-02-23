@@ -81,4 +81,12 @@ server{
 127.0.0.1	t.localhost
 ```
 最後就可以打開瀏覽器 http://t.localhost
-應該會出現 Hello World 
+應該會出現 502 Getway Error
+為什麼呢？
+因為 socket file 的權限設定
+其他使用者 (nginx) 無法開啟
+所以要
+```
+$ chmod 777 /tmp/express.sock
+```
+這樣就可以啦！
