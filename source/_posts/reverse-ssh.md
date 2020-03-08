@@ -28,7 +28,7 @@ $ ssh server@localhost -p 2222
 在社辦電腦
 ```
 $ apt install autossh
-$ autossh -M 2222 -NR  1111:localhost:22 simba@simba-vps -p 22
+$ autossh -Mf 2222 -NR  1111:localhost:22 simba@simba-vps -p 22
 ```
 這樣就可以在 vps 上
 ```
