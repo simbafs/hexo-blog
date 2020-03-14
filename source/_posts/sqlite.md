@@ -31,7 +31,7 @@ $ npm i sqlite-async
 	const Url = await sqlite.open('Url.db');
 
 	// 這裡不能加 await 不然出錯
-    Url.run(`CREATE if not exists TABLE Url (
+    Url.run(`CREATE TABLE IF NOT EXISTS Url (
         url STRING,
         code STRING
     )`);
