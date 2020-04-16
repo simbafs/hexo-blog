@@ -3,5 +3,10 @@
 		"name": "CKCSC URL",
 		"url": "https://url.ckcsc.net/",
 		"desc": "A simple url shortener service"
+	},
+	{
+		"name": "Let's Remind Daniel",
+		"url": "https://daniel.simba.nctu.me/",
+		"desc": "A small project that include sqlite3, expressjs and passportjs"
 	}
 ]
