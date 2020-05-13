@@ -10,11 +10,6 @@
 		"desc": "A small project that include sqlite3, expressjs and passportjs"
 	},
 	{
-		"name": "Discord CKSH Post update bot",
-		"url": "https://github.com/simba-fs/cksh-post/",
-		"desc": "Alert when a new post release on the CKSH website"
-	},
-	{
 		"name": "CKCSC 32nd Website",
 		"url": "https://ckcsc.net/",
 		"desc": "Official website for CKCSC 32nd"
@@ -23,5 +18,15 @@
 		"name": "2018",
 		"url": "https://simba-fs.github.io/2048",
 		"desc": "A javascript copy of a famous game 2048"
+	},
+	{
+		"name": "Discord CKSH Post update bot",
+		"url": "https://github.com/simba-fs/cksh-post/",
+		"desc": "Alert when a new post release on the CKSH website"
+	},
+	{
+		"name": "Discord Uptime Robot",
+		"url": "https://github.com/simba-fs/uptime-robot",
+		"desc": "When a website that in the list is up/down, this bot will send a message to you"
 	}
 ]
