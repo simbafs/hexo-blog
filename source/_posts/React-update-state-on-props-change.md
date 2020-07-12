@@ -35,6 +35,6 @@ function Input(props){
 ```
 如此一來 `state` 就會和 `props` 同步了
 
-#參考資料
+# 參考資料
 https://stackoverflow.com/questions/54865764/react-usestate-does-not-reload-state-from-props
 https://zh-hant.reactjs.org/docs/hooks-effect.html
