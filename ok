@@ -1,5 +1,0 @@
-#!/bin/bash
-hexo g -d
-git add . -A
-git commit 
-git push
