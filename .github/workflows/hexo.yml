@@ -19,7 +19,7 @@ jobs:
           GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
           which gpg
-          cat ~/.gitconfig
+          which gpg2
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
@@ -29,7 +29,7 @@ jobs:
           git config --global user.email "simba.fs@gmail.com"
           echo "$GPG_KEY" > private.key
           gpg --import private.key
-          git config --global gpg.program gpg1
+          git config --global gpg.program gpg2
           git config --global user.signingkey DD17CEF74242942DC4B09E3E22D857A2BFB0E0AC
           git config --global commit.gpgsign true
       - name: Update themes
