@@ -18,8 +18,7 @@ jobs:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
-          which gpg
-          which gpg2
+          ls ~/ -al || exit 0
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
