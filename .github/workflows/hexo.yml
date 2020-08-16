@@ -1,4 +1,4 @@
-name: CI
+name: Hexo
 on:
   push:
     branches:
@@ -32,6 +32,9 @@ jobs:
         run: |
           npm i -g hexo-cli
           npm i
+      - name: Clean file
+        run: |
+          hexo clean  
       - name: Generate hexo
         run: |
           hexo generate
