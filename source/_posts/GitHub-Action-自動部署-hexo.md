@@ -41,6 +41,9 @@ secret key 要放在你存放部落格檔案的 repo，owlran 大大是放在同
 # Action
 我的 Action 內容基本上是複製 owlran 大大的，但是因為 repo 結構有小小不同所以我了一些修改，如果你要改的話應該是不難才對，GitHub Action 的設定檔我覺得還好懂的。  
 這個設定是放在你放部落格檔案的那個 repo
+
+> 注意：第 25, 26 行的 `username` 和 `email` 記得改成你的，不然 git commit message 會有問題
+
 > 你放部落格檔案的那個 repo -> Action -> New workflow -> set up a workflow yourself
 
 ```yaml
@@ -68,8 +71,8 @@ jobs:
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "owlran"
-          git config --global user.email "owlran1088@gmail.com"
+          git config --global user.name "Your username"
+          git config --global user.email "Your email"
       - name: Update themes
         run: |
           git submodule init
