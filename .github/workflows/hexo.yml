@@ -18,7 +18,6 @@ jobs:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
-          ls ~/ -al || exit 0
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
@@ -31,6 +30,7 @@ jobs:
           git config --global gpg.program gpg2
           git config --global user.signingkey DD17CEF74242942DC4B09E3E22D857A2BFB0E0AC
           git config --global commit.gpgsign true
+          git config --list --show-origin
       - name: Update themes
         run: |
           git submodule init
