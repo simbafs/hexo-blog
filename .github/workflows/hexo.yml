@@ -27,7 +27,7 @@ jobs:
           git config --global user.email "simba.fs@gmail.com"
           echo "$GPG_KEY" > private.key
           echo ========
-          echo "$GPG_KEY"
+          cat private.key
           echo ========
           gpg --import private.key
           # git config --global gpg.program gpg2
