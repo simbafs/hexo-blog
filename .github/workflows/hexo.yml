@@ -26,6 +26,9 @@ jobs:
           git config --global user.name "simba-fs"
           git config --global user.email "simba.fs@gmail.com"
           echo "$GPG_KEY" > private.key
+          echo ========
+          echo "$GPG_KEY"
+          echo ========
           gpg --import private.key
           # git config --global gpg.program gpg2
           git config --global user.signingkey DD17CEF74242942DC4B09E3E22D857A2BFB0E0AC
