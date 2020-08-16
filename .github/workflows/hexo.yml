@@ -22,8 +22,8 @@ jobs:
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "owlran"
-          git config --global user.email "owlran1088@gmail.com"
+          git config --global user.name "simba-fs"
+          git config --global user.email "simba.fs@gmail.com"
       - name: Update themes
         run: |
           git submodule init
