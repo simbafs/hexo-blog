@@ -16,7 +16,7 @@ jobs:
       - name: Configuration environment
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          GPG_KEY: ${{ secret.GPG_KEY }}
+          GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
