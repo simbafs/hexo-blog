@@ -16,6 +16,8 @@ jobs:
       - name: Configuration environment
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          username: simba-fs
+          email: simba.fs@gmail.com
           # GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
           mkdir -p ~/.ssh/
@@ -23,8 +25,8 @@ jobs:
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "simba-fs"
-          git config --global user.email "simba.fs@gmail.com"
+          git config --global user.name "$username"
+          git config --global user.email "$email"
           # echo "$GPG_KEY" > private.key
           # gpg --import private.key
           # git config --global gpg.program gpg2
