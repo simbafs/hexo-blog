@@ -27,12 +27,16 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name "$username"
           git config --global user.email "$email"
-          # echo "$GPG_KEY" > private.key
-          # gpg --import private.key
-          # git config --global gpg.program gpg2
-          # git config --global user.signingkey DD17CEF74242942DC4B09E3E22D857A2BFB0E0AC
-          # git config --global commit.gpgsign true
-          # git config --list --show-origin
+          git config commit.gpgsign true
+      - name: Imoport GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        with:
+          git_user-signingkey: true
+          git_commit_gpgsign: true
+        env: 
+          GPG_PRIVATE: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
       - name: Update themes
         run: |
           git submodule init
