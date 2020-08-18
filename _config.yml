@@ -100,6 +100,11 @@ feed:
   path: atom.xml
   limit: 20
 
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+
 ## Themes: https://hexo.io/themes/
 # theme: hexo-theme-replica
 theme: cactus
