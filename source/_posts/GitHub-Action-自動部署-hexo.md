@@ -42,7 +42,7 @@ secret key 要放在你存放部落格檔案的 repo，owlran 大大是放在同
 我的 Action 內容基本上是複製 owlran 大大的，但是因為 repo 結構有小小不同所以我了一些修改，如果你要改的話應該是不難才對，GitHub Action 的設定檔我覺得還好懂的。  
 這個設定是放在你放部落格檔案的那個 repo
 
-> 注意：第 25, 26 行的 `username` 和 `email` 記得改成你的，不然 git commit message 會有問題
+> 注意：第 27, 28 行的 `username` 和 `email` 記得改成你的，不然 git commit message 會有問題
 
 > 你放部落格檔案的那個 repo -> Action -> New workflow -> set up a workflow yourself
 
@@ -64,15 +64,30 @@ jobs:
           node_version: ${{ matrix.node_version }}
       - name: Configuration environment
         env:
-          DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "Your username"
-          git config --global user.email "Your email"
+      - name: git config
+        env:
+          username: 
+          email: 
+        run: |
+          git config --global user.name "$username"
+          git config --global user.email "$email"
+          git config --global commit.gpgsign true
+      - name: Imoport GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        with:
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+        env: 
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
       - name: Update themes
         run: |
           git submodule init
@@ -87,6 +102,9 @@ jobs:
       - name: Generate hexo
         run: |
           hexo generate
+      - name: list posts
+        run: |
+          hexo list post
       - name: Deploy hexo
         run: |
           hexo deploy
