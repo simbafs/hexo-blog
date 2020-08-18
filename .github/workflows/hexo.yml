@@ -16,15 +16,17 @@ jobs:
       - name: Configuration environment
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          username: simba-fs
-          email: simba.fs@gmail.com
-          # GPG_KEY: ${{ secrets.GPG_KEY }}
         run: |
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: git config
+        env:
+          username: simba-fs
+          email: simba.fs@gmail.com
+        run: |
           git config --global user.name "$username"
           git config --global user.email "$email"
           git config --global commit.gpgsign true
@@ -51,6 +53,9 @@ jobs:
       - name: Generate hexo
         run: |
           hexo generate
+      - name: list posts
+        run: |
+          hexo list post
       - name: Deploy hexo
         run: |
           hexo deploy
