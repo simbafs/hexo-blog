@@ -44,6 +44,7 @@ date: 2020-02-10 17:25:29
 # Contact Me
 | Platform | username                                             |
 | :---:    | :---                                                 |
+| GitHub   | [simba-fs](https://github.com/simba-fs)              |
 | Facebook | [simba.fs](https://www.facebook.com/simba.fs/)       |
 | mail     | [simba.fs@gmail.com](mailto:simba.fs+blog@gmail.com) |
 | Discord  | simba#2030                                           |
