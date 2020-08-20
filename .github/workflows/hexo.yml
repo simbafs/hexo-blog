@@ -50,7 +50,7 @@ jobs:
           npm i
       - name: Generate hexo
         run: |
-          # ./script/recorverDate.sh
+          ./script/recorverDate.sh
           hexo generate
       - name: list posts
         run: |
