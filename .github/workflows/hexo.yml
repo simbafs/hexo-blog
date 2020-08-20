@@ -50,6 +50,9 @@ jobs:
       - name: Clean file
         run: |
           hexo clean  
+      - name: test
+        run: |
+          ls -l source/_post
       - name: Generate hexo
         run: |
           ./script/recorverDate.sh
