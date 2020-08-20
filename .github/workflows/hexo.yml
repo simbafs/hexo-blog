@@ -47,12 +47,6 @@ jobs:
         run: |
           npm i -g hexo-cli
           npm i
-      - name: Clean file
-        run: |
-          hexo clean  
-      - name: test
-        run: |
-          ls -l source/_post
       - name: Generate hexo
         run: |
           ./script/recorverDate.sh
