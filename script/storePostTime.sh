@@ -1,5 +1,9 @@
 #!/bin/bash
-dir=source/_posts
+if [[ -z $1 ]];then
+	dir=source/_posts
+else
+	dir=$1
+fi
 
 grep -rnw $dir -e 'date' > t
 cut -d: -f1 t > name
@@ -8,4 +12,4 @@ paste -d: name time > "$dir/time"
 
 cat "$dir/time"
 
-rm t time name 
+rm t time name
