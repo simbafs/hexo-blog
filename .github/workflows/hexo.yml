@@ -52,6 +52,7 @@ jobs:
           hexo clean  
       - name: Generate hexo
         run: |
+          ./script/recorverDate.sh
           hexo generate
       - name: list posts
         run: |
