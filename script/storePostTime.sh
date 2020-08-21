@@ -1,5 +1,4 @@
 #!/bin/bash
-echo test
 if [[ -z $1 ]];then
 	dir=source/_posts
 else
