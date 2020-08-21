@@ -8,9 +8,9 @@ fi
 grep 'date: [0-9]{4}' $dir/*.md > t
 cut -d: -f1 t > name
 cut -d' ' -f2,3 t | sed 's/[- ]//g' | sed 's/://' | sed 's/:/./' > time
-paste -d: name time > $dir/time
+paste -d: name time > t
 
-for i in $(cat $dir/time);do
+for i in $(cat t);do
 	n=$(echo $i | cut -d: -f1);
 	d=$(echo $i | cut -d: -f2);
 	touch -t$d $n;
