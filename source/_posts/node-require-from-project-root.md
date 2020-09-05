@@ -42,4 +42,4 @@ https://github.com/nodejs/node/issues/4223
 https://github.com/nodejs/node/issues/1979  
 https://www.npmjs.com/package/rooty  
 ^^^  
-這個是在 github issue 裡面看的，沒事過，但是應該也可以用吧？只是我覺得沒有 `paths` 的解法來的優雅。  
+這個是在 github issue 裡面看到的，沒試過，但是應該也可以用吧？只是我覺得沒有 `paths` 的解法來的優雅。  
