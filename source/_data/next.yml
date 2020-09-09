@@ -1,0 +1,280 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# See: https://theme-next.org/docs/getting-started/
+# ---------------------------------------------------------------
+
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
+
+# Creative Commons 4.0 International License.
+# See: https://creativecommons.org/share-your-work/licensing-types-examples
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+creative_commons:
+  license: by-sa
+  sidebar: true
+  post: true
+  language: 
+
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
+
+# Dark Mode
+darkmode: true
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
+# Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+# When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
+# External url should start with http:// or https://
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  # schedule: /schedule/ || fa fa-calendar
+  # sitemap: /sitemap.xml || fa fa-sitemap
+  # commonweal: /404/ || fa fa-heartbeat
+
+# Enable / Disable menu icons / item badges.
+menu_settings:
+  icons: true
+  badges: true
+
+
+# Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/icon.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: false
+
+# Posts / Categories / Tags in sidebar.
+site_state: true
+
+# Social Links
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
+social:
+  GitHub: https://github.com/simba-fs || fab fa-github
+  E-Mail: mailto:simba.fs+blog@gmail.com || fa fa-envelope
+  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  #Google: https://plus.google.com/yourname || fab fa-google
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  FB Page: https://www.facebook.com/simba.fs || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: false
+
+
+# Read more button
+# If true, the read more button will be displayed in excerpt section.
+read_more_btn: true
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: false
+    another_day: false
+  categories: true
+
+# Use icon instead of the symbol # to indicate the tag at the bottom of the post
+tag_icon: false
+
+# TagCloud settings for tags page.
+tagcloud:
+  # All values below are same as default, change them by yourself.
+  min: 12 # Minimun font size in px
+  max: 30 # Maxium font size in px
+  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
+  end: "#111" # End color (hex, rgba, hsla or color keywords)
+  amount: 200 # Amount of tags, change it if you have more than 200 tags
+
+# Custom Logo (Do not support scheme Mist)
+custom_logo: #/uploads/custom-logo.jpg
+
+codeblock:
+  # Code Highlight theme
+  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
+  # See: https://github.com/chriskempson/tomorrow-theme
+  highlight_theme: normal
+  # Add copy button on codeblock
+  copy_button:
+    enable: true
+    # Show text copy result.
+    show_result: true
+    # Available values: default | flat | mac
+    style: 
+
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: false
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+
+# Reading progress bar
+reading_progress:
+  enable: true
+  # Available values: top | bottom
+  position: top
+  color: "#37c6c0"
+  height: 3px
+
+# Bookmark Support
+bookmark:
+  enable: true
+  # Customize the color of the bookmark.
+  color: "#222"
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
+  save: auto
+
+# `Follow me on GitHub` banner in the top-right corner.
+github_banner:
+  enable: true
+  permalink: https://github.com/simba-fs
+  title: Follow me on GitHub
+
+
+# ---------------------------------------------------------------
+# Font Settings
+# See: https://theme-next.org/docs/theme-settings/#Fonts-Customization
+# ---------------------------------------------------------------
+# Find fonts on Google Fonts (https://www.google.com/fonts)
+# All fonts set here will have the following styles:
+#   light | light italic | normal | normal italic | bold | bold italic
+# Be aware that setting too much fonts will cause site running slowly
+# ---------------------------------------------------------------
+# To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `title`):
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+
+font:
+  enable: true
+
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
+  host: https://fonts.googleapis.com
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family: 'Roboto Mono'
+
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+# Google Webmaster tools verification.
+# See: https://www.google.com/webmasters
+google_site_verification: googlefd67e470c354b9de.html
+
+
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# See: https://theme-next.org/docs/third-party-services/
+# More plugins: https://github.com/theme-next/awesome-next
+# You may need to install dependencies or set CDN URLs in `vendors`
+# There are two different CDN providers by default:
+#   - jsDelivr (cdn.jsdelivr.net), works everywhere even in China
+#   - CDNJS (cdnjs.cloudflare.com), provided by cloudflare
+# ---------------------------------------------------------------
+
+# A JavaScript library for zooming images like Medium.
+# Do not enable both `fancybox` and `mediumzoom`.
+# For more information: https://github.com/francoischalifour/medium-zoom
+mediumzoom: true
+
+# Vanilla JavaScript plugin for lazyloading images.
+# For more information: https://github.com/ApoorvSaxena/lozad.js
+lazyload: true
+
+# Pangu Support
+# For more information: https://github.com/vinta/pangu.js
+pangu: true
+
+# ---------------------------------------------------------------
+# Post Widgets & Content Sharing Services
+# See: https://theme-next.org/docs/third-party-services/post-widgets
+# ---------------------------------------------------------------
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+# Google Analytics
+google_analytics:
+  tracking_id: UA-175823992-1
+  # By default, NexT will load an external gtag.js script on your site.
+  # If you only need the pageview feature, set the following option to true to get a better performance.
+  only_pageview: false
+
+# Another tool to show number of visitors to each article.
+# Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
+# Visit https://firebase.google.com/docs/firestore/ to get more information about firestore.
+firestore:
+  enable: false
+  collection: articles # Required, a string collection name to access firestore database
+  apiKey: # Required
+  projectId: # Required
+
+# ---------------------------------------------------------------
+# Search Services
+# See: https://theme-next.org/docs/third-party-services/search-services
+# ---------------------------------------------------------------
+
+# Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: -1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false
+
+# PDF tag
+# NexT will try to load pdf files natively, if failed, pdf.js will be used.
+# So, you have to install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
+# See: https://github.com/theme-next/theme-next-pdf
+pdf:
+  enable: true
+  # Default height
+  height: 500px

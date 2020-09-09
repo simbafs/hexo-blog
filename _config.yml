@@ -108,7 +108,7 @@ sitemap:
 
 ## Themes: https://hexo.io/themes/
 # theme: hexo-theme-replica
-theme: cactus
+theme: next
 
 # comment
 disqus:
