@@ -5,7 +5,6 @@ tags:
 - linux
 - sandbox
 category:
-- soj
 ---
 
 我有一個放了很久的計畫，就是自己寫一個 OJ，因為我覺得現在的那個太難用了。
