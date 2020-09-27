@@ -1,9 +1,7 @@
----
 title: autobiography
 date: 2020-09-20 19:28:16
 tags:
 category:
-- 特選
 ---
 # 自傳
 
