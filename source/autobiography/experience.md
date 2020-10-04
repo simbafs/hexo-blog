@@ -67,7 +67,7 @@ date: 2020-09-27 20:34:00
 
 ----
 
-## [yt-dl](https://github.com/yt-dl-tool)
+## [yt-dl](https://github.com/simba-fs/yt-dl-tool)
 這個是個 shell script，會根據輸入的歌單批次從 youtube 下載成 mp3 並重新命名。
 
 ----
