@@ -1,3 +1,8 @@
+---
+title: Index
+date: 2020-09-27 20:34:00
+---
+
 - [自傳](#%E8%87%AA%E5%82%B3)
   * [壹、家庭背景與啟蒙](#%E5%A3%B9%E5%AE%B6%E5%BA%AD%E8%83%8C%E6%99%AF%E8%88%87%E5%95%9F%E8%92%99)
   * [貳、學習經歷](#%E8%B2%B3%E5%AD%B8%E7%BF%92%E7%B6%93%E6%AD%B7)
@@ -59,7 +64,5 @@ Scratch 是我接觸的第一個程式語言。還記得當時看到一顆小球
 [經歷](./experience.html)
 [學習計劃](./studyPlan.html)
 [其他有利資料](./others.html)
-
----
-
 [Google Drive](https://drive.google.com/drive/folders/1XzGUj6r_uHXHeu4YsjgJrfocU4JN97yf?usp=sharing)
+
