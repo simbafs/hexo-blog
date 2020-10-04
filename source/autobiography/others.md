@@ -7,7 +7,7 @@ date: 2020-09-27 20:34:00
 ## 專案
 
 * [simply.js](https://github.com/simba-fs/simply.js)  
-這是我在做完幾個 Discord 機器人以及接觸到 expressjs 之後做出來的一個 Discord bot framework，他包含了簡便的命令定義和 echo。另外這個也是我的第一個比較完整的專案。
+這是我在做完幾個 Discord 機器人以及接觸到 expressjs 之後做出來的一個 Discord bot framework，他包含了簡便的命令定義和 echo。這是我的第一個比較完整的專案。
 ![simply](/autobiography/other/simplyjs.png)
 
 * server tool
@@ -66,4 +66,4 @@ date: 2020-09-27 20:34:00
 > 合照
 
 ![club-4](/autobiography/other/club-4.png)
-> 我教課的照片
+> 我的授課照片
