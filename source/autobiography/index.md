@@ -59,3 +59,7 @@ Scratch 是我接觸的第一個程式語言。還記得當時看到一顆小球
 [經歷](./experience.html)
 [學習計劃](./studyPlan.html)
 [其他有利資料](./others.html)
+
+---
+
+[Google Drive](https://drive.google.com/drive/folders/1XzGUj6r_uHXHeu4YsjgJrfocU4JN97yf?usp=sharing)
