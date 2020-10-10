@@ -7,14 +7,15 @@ date: 2020-09-27 20:34:00
 ## 專案
 
 * [simply.js](https://github.com/simba-fs/simply.js)  
-這是我在做完幾個 Discord 機器人以及接觸到 expressjs 之後做出來的一個 Discord bot framework，他包含了簡便的命令定義和 echo。這是我的第一個比較完整的專案。
+這是我在做完幾個 Discord 機器人以及接觸到 expressjs 之後做出來的一個 Discord Bot Framework，他包含了簡便的命令定義和 echo。他可以幫助開發者快速建立新的機器人，為以後的專案建立基礎架構。
 ![simply](/autobiography/other/simplyjs.png)
 
 * server tool
-這是一組 shell script，主要功能是分析伺服器的 log file，可以把來源 ip、請求時間排序並且以圖像化方式呈現。
+在管理伺服器的過程中，我發現 log 檔太長，不易閱讀與分析，所以寫了這一組 shell script，主要功能是分析伺服器的 log file，可以把來源 ip、請求時間排序並且以圖像化方式呈現。
 ![server-tool](/autobiography/other/serverTool.png)
 
 * [aurl](https://url.ckcsc.net)
+
 這個專案主要是透過 expressjs 和 mongoose 實現短網址，expressjs 架設網頁伺服器，mongoose 操作資料庫，模板引擎是 ejs。在最近我也把他打包成 docker image，在 [aurl-docker-compose](https://github.com/simba-fs/aurl-docker-deploy) 提供 docker-compose.yml 可以快速在 docker 開啟主程式和 mongodb server。
 ![aurl](/autobiography/other/aurl.png)
 
@@ -25,7 +26,7 @@ date: 2020-09-27 20:34:00
 
 
 * [remind Daniel](https://github.com/simba-fs/daniel)
-這個專案實做了登入和註冊還有管理員系統，另外這次的資料庫選用的是 sqlite3，因為 sqlite3 基於檔案的特性，這個專案在搬移的時候只需要複製檔案就可以了，不需要另外再開一個資料庫伺服器。
+這個專案實作了登入和註冊還有管理員系統，另外這次的資料庫選用的是 sqlite3，因為 sqlite3 基於檔案的特性，這個專案在搬移的時候只需要複製檔案就可以了，不需要另外再開一個資料庫伺服器。
 ![daniel](/autobiography/other/daniel.png)
 
 
@@ -35,12 +36,17 @@ date: 2020-09-27 20:34:00
 
 
 * [yt-dl](https://github.com/simba-fs/yt-dl-tool)
-這個是個 shell script，會根據輸入的歌單批次從 youtube 下載成 mp3 並重新命名。
+我平常聽的音樂都是從 youtube 下載，但是下載下來的 mp3 檔名都很長，我得要每一個重新命名，所以我寫這個 shell script，會根據輸入的歌單批次從 youtube 下載成 mp3 並重新命名。他使用 youtube-dl 下載。
 ![yt-dl-tool](/autobiography/other/yt-dl-tool.png)
 
 
 * [signup](https://github.com/simba-fs/signup)
-這個是一個 express middleware，提供註冊的 API，還可以透過寄發電子郵件驗證。要使用這些功能只需要引入一個檔案就可以了。
+在幾次實作登入的經驗中，我發現註冊時驗證 email 是最麻煩的一步驟。而這個套件可以用一行程式完成註冊的 API。這個套件提供一個 express middleware，包含註冊的 API，還可以透過寄發電子郵件驗證。範例：
+```js
+app.use(signup(User));
+
+// User 是 mongoose 的 model 物件
+```
 
 
 * [pool](https://github.com/simba-fs/pool)
