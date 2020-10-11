@@ -4,6 +4,6 @@
 這個是我的自傳：[https://simba-fs.github.io/autobiography/](https://simba-fs.github.io/autobiography/index.html)，自傳裡最下面的連結可以看到其他資料  
 清大的推薦函截止時間是 10/25 12:00  
 交大的推薦函截止時間是 11/15 17:00  
-我的 email 是 simba.fs@gmail.com 如果校長您需要其他資料可以跟我聯繫。  
+我的 email 是 me@simba-fs.dev 如果校長您需要其他資料可以跟我聯繫。  
   
 我的媽媽是清水高中輔導老師郭芳妙，與校長您是多年前的同事，在此代替媽媽問候您。  
