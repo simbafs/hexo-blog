@@ -7,3 +7,13 @@
 我的 email 是 me@simba-fs.dev 如果校長您需要其他資料可以跟我聯繫。  
   
 我的媽媽是清水高中輔導老師郭芳妙，與校長您是多年前的同事，在此代替媽媽問候您。  
+
+
+[out.pdf](./out.pdf)
+
+[applyMotive.pdf](./applyMotive.pdf)
+[index.pdf](./index.pdf)
+[nctu.pdf](./nctu.pdf)
+[nhtu.pdf](./nhtu.pdf)
+[princupal.pdf](./princupal.pdf)
+[studyPlan.pdf](./studyPlan.pdf)
