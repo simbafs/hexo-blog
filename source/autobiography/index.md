@@ -43,7 +43,7 @@ Scratch 是我接觸的第一個程式語言。還記得當時看到一顆小球
 
 ---
 
-[簡介](./intoduce.html)
+[簡介](./introduce.html)
 [申請動機](./applyMotiv.html)
 [學習計劃](./studyPlan.html)
 [其他有利資料](./others.html)
