@@ -10,10 +10,10 @@
 
 
 [out.pdf](./out.pdf)
+[nctu.pdf](./nctu.pdf)
+[nhtu.pdf](./nhtu.pdf)
 
 [applyMotive.pdf](./applyMotive.pdf)
 [index.pdf](./index.pdf)
-[nctu.pdf](./nctu.pdf)
-[nhtu.pdf](./nhtu.pdf)
-[princupal.pdf](./princupal.pdf)
+[principal.pdf](./principal.pdf)
 [studyPlan.pdf](./studyPlan.pdf)
