@@ -4,7 +4,7 @@ date: 2020-09-10 22:15:50
 tags: 
 - docker
 - linux
-category:
+category: docker
 ---
 
 # Install

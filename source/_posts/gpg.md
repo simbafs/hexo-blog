@@ -2,8 +2,10 @@
 title: gpg
 date: 2020-03-28 18:47:48
 tags:
+- git
+- linux
 - gpg
-category:
+category: linux
 ---
 
 今天心血來潮想設定 GPG，網路上查了一個教學，無疑的又遇到一個坑

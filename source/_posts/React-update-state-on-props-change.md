@@ -2,7 +2,7 @@
 title: React update state on props change
 date: 2020-07-12 22:14:03
 tags: react
-category:
+category: react
 ---
 
 # 問題

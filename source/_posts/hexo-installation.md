@@ -2,6 +2,7 @@
 title: hexo-installation
 date: 2020-02-10 17:26:45
 tags: hexo
+categories: hexo
 ---
 
 # 把 hexo 部屬到 gh-page

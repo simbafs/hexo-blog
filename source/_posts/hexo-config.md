@@ -6,6 +6,7 @@ tags:
 - cactus
 - highlight
 - RSS
+categories: hexo
 ---
 
 # 各種設定值嘗試

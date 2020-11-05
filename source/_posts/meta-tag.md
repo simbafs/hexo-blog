@@ -4,7 +4,7 @@ date: 2020-03-28 23:24:59
 tags:
 - html
 - meta
-category:
+category: frontend
 ---
 
 今天為了幫 [Let's Remind Daniel](https://daniel.simba.nctu.me) 做 SEO

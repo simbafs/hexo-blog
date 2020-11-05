@@ -4,6 +4,7 @@ date: 2020-02-11 10:38:07
 tags: 
 - hexo
 - github action
+categories: hexo
 ---
 
 # 自動部屬部落格

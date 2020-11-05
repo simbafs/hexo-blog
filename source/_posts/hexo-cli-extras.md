@@ -2,6 +2,7 @@
 title: hexo-cli-extras
 date: 2020-02-11 21:26:30
 tags: hexo
+categories: hexo
 ---
 
 # 好用的插件

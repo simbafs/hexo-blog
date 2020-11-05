@@ -4,7 +4,7 @@ date: 2020-03-09 22:30:48
 tags:
 - linux
 - sandbox
-category:
+category: linux
 ---
 
 我有一個放了很久的計畫，就是自己寫一個 OJ，因為我覺得現在的那個太難用了。

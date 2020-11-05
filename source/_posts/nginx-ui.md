@@ -2,7 +2,7 @@
 title: nginx-ui
 date: 2020-06-23 22:50:29
 tags: nginx linux
-category:
+category: server
 ---
 
 前幾天發現一個專案 nginx ui

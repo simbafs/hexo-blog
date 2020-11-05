@@ -4,8 +4,7 @@ date: 2020-02-18 23:07:44
 tags:
 - blessed
 - blessed-contrib
-category: 
-- blessed
+category: blessed
 ---
 
 # Tree

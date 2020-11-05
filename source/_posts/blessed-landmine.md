@@ -3,8 +3,7 @@ title: blessed-landmine
 date: 2020-02-26 22:07:36
 tags:
 - blessed
-category:
-- blessed
+category: blessed
 ---
 
 這是一篇我在用 blessed 時踩的一些雷

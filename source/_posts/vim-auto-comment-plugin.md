@@ -3,7 +3,7 @@ title: vim auto comment plugin
 date: 2020-08-25 22:43:55
 tags:
 - vim
-category:
+category: vim
 ---
 
 # 套件

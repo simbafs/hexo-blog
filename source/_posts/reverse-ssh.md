@@ -4,7 +4,7 @@ date: 2020-02-23 21:24:34
 tags:
 - ssh
 - linux
-category:
+category: linux
 ---
 
 一直以來連線回社辦的電腦都要走 webtty 再開 tmate

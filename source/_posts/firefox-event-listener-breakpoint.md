@@ -3,7 +3,7 @@ title: firefox-event-listener-breakpoint
 date: 2020-03-25 22:39:00
 tags:
 - firefox
-category:
+category: frontend
 ---
 
 # 問題

@@ -5,7 +5,7 @@ tags:
 - unix socket
 - node
 - nginx
-category:
+category: nodejs
 ---
 
 今天心血來潮在看 unix socket

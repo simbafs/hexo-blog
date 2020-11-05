@@ -3,7 +3,7 @@ title: express 重複 send
 date: 2020-08-19 23:41:38
 tags:
 - express
-category:
+category: nodejs
 ---
 
 # 問題

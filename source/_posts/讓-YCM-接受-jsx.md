@@ -5,7 +5,7 @@ tags:
 - vim
 - jsx
 - react
-category:
+category: vim
 ---
 
 最近寫ˋreact 的時候只要遇到 jsx 語法 YCM 就會跳出這個錯誤

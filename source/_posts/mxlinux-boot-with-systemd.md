@@ -4,7 +4,7 @@ date: 2020-09-05 15:54:27
 tags:
 - mxlinux
 - systemd
-category:
+category: linux
 ---
 
 # 問題

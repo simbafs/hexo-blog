@@ -4,6 +4,7 @@ date: 2020-02-13 21:09:06
 tags:
 - ddos
 - bash
+categories: server
 ---
 
 # 伺服器被 DDoS 惹

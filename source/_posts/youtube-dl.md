@@ -4,7 +4,7 @@ date: 2020-03-04 22:48:20
 tags:
 - youtube-dl
 - bash
-category:
+category: linux
 ---
 
 最近在下載 youtube 音樂，每次下載都要把檔案重新改名，很麻煩。所以就想要寫一個 shell script 來幫我解決。

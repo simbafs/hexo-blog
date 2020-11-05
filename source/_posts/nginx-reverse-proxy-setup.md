@@ -5,6 +5,7 @@ tags:
 - nginx
 - reverse proxy
 - certbot
+categories: server
 ---
 
 # nginx 反向代理伺服器 (reverse proxy)

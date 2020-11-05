@@ -2,7 +2,7 @@
 title: HTML form button
 date: 2020-06-01 22:54:18
 tags: HTML
-category:
+category: frontend
 ---
 
 HTML 的 form 裡的按鈕預設是 submit

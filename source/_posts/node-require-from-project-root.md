@@ -3,7 +3,7 @@ title: node require from project root
 date: 2020-09-02 22:38:19
 tags:
 - nodejs
-category:
+category: nodejs
 ---
 
 # 問題

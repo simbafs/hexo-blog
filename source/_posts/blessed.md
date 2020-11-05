@@ -3,8 +3,7 @@ title: blessed
 date: 2020-02-17 23:24:10
 tags:
 - blessed
-category:
-- blessed
+category: blessed
 ---
 
 某天我有一個問題

@@ -6,7 +6,7 @@ tags:
 - github
 - github-action
 - CI/Cl
-category:
+category: hexo
 ---
 
 # 前言

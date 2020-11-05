@@ -4,7 +4,7 @@ date: 2020-02-24 22:14:36
 tags:
 - ssh
 - linux
-category:
+category: linux
 ---
 
 昨天架好了 reverse ssh 讓我可以連回學校 server

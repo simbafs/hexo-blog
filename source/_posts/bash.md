@@ -4,6 +4,7 @@ date: 2020-02-16 22:15:10
 tags:
 - bash
 - RegEx
+categories: server
 ---
 
 # 用 bash 寫 log 分析工具

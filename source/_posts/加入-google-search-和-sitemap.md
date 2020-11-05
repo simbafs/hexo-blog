@@ -3,7 +3,7 @@ title: 加入 google search 和 sitemap
 date: 2020-08-19 22:37:52
 tags: 
 - hexo
-category:
+category: hexo
 ---
 
 # 前置設定

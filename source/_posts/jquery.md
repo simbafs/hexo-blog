@@ -3,7 +3,7 @@ title: jquery
 date: 2020-03-15 11:38:47
 tags:
 - jquery
-category:
+category: frontend
 ---
 
 今天寫 jquery 遇到了一些坑

@@ -5,7 +5,7 @@ tags:
 - node
 - sqlite
 - async
-category:
+category: nodejs
 ---
 
 昨天是試著去理解 sqlite3，我發現他的 callback function 真的太煩了

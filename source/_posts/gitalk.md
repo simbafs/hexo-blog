@@ -4,6 +4,7 @@ date: 2020-02-11 18:14:32
 tags: 
 - hexo
 - github
+categories: hexo
 ---
 
 # 啟用 gitalk 留言

@@ -2,7 +2,7 @@
 title: mxlinux-change-workspace
 date: 2020-05-08 17:59:22
 tags: mxlinux
-category:
+category: linux
 ---
 
 # 切換工作區
