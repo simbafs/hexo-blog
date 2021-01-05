@@ -14,7 +14,7 @@ category: nodejs
 
 # 安裝步驟
 ## 申請帳號
-先到 [hCaptcha](https://hcaptcha.com/) 註冊、新增一個網站，複製他的 sitekey (`Sites` > `site setting`) 和你的 secret key (`Settings`)，我們等等會用到
+先到 [hCaptcha](https://hcaptcha.com/) 註冊、新增一個網站，複製 sitekey (`Sites` > `site setting`) 和 secret key (`Settings`)，我們等等會用到
 
 ## 前端
 1. 首先引入 script ，在 `<head>` 加入
@@ -29,7 +29,8 @@ category: nodejs
 
 ## 後端（node express）
 1. SECRET  
-首先，你要把剛剛的 `SECRET` 給 server 知道，我用的是 dotenv，當然其他的套件也是可以，而言之剛剛複製下來的 `SECRET` 就是用在這裡。
+首先，你要把剛剛的 `SECRET` 給 server 知道，我用的是 dotenv，當然其他的套件也是可以。  
+簡而言之，剛剛複製下來的 `SECRET` 就是用在這裡。
 
 2. 驗證
 後端我選用的套件是 [express-hcaptcha](https://github.com/vastus/express-hcaptcha) ，它提供一個 middleware 驗證 hcaptcha 的 token。
@@ -52,7 +53,8 @@ if(SECRET){
 module.exports = router;
 ```
  
-> 很不幸的，你會發現不管怎麼試，都驗證都不會通過，因為有一個 README.md 沒寫的 bug
+> 很不幸的，你會發現不管怎麼試，都驗證都不會通過，因為有一個 README.md 沒寫的 bug  
+
 3. 解 bug
 閱讀 [express-hcaptcha](https://github.com/vastus/express-hcaptcha) 的 source code，你會在 [這行](https://github.com/vastus/express-hcaptcha/blob/694265a005cbb15306c9d65623c6a365be79b8fc/index.js#L9) 發現它用的是 `req.body.token` ，但是 hCaptcha 的回傳是在 `req.body.h-captcha-token` 裡面 ......  
 有夠蠢的 bug   
