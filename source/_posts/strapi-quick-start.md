@@ -36,7 +36,7 @@ headless CMS 顧名思義是「無頭的 內容管理系統」，意思是沒有
 2. 解決 dependency 的錯誤  
 把 `package.json` 裡面 `dependencies` 裡面 `knex` 的版本中 `<` 拿掉，然後下 `npm update` 再 `npm start` 就可以了
 3. build  
-這時候如果你按照官網的教學 `npm start` 一定匯出錯，你要先 `npm run build` 然後它才不會一直說找不到檔案
+這時候如果你按照官網的教學 `npm start` 一定會出錯，你要先 `npm run build` 然後它才不會一直說找不到檔案
 4. 建立第一個 user  
 接著它應該會自動幫你開啟一個頁面，如果沒有的話可以按[這個連結](http://localhost:1337/admin)。再來我們要建立使用者，他的密碼要求特別機掰，一定要英數大小寫混合才給過，太短也不行。
 5. 建立 `collection type`  
