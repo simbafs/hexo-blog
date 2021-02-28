@@ -286,7 +286,7 @@ comments:
   lazyload: true
 
 gitalk:
-  enable: true
+  enable: false
   github_id: simba-fs
   repo: simba-fs.github.io 
   client_id: 21ee7e44e88d5f3283eb
