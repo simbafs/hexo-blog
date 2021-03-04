@@ -26,6 +26,12 @@
     "hexo-server": "^1.0.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "hexo-renderer-jade": "^0.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
