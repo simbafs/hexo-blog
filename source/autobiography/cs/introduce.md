@@ -8,6 +8,9 @@ date: 2020-09-27 20:34:00
 	* 生日：92 年 1 月 27 日
 	* 信箱：me@simba-fs.dev
 	* GitHub：simba-fs
+* 社團幹部
+* 班級幹部
+* 社群參與
 * 專長
 	* HTML/CSS/JavaScript
 	* nodejs
