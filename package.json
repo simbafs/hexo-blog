@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "push": "./script/storePostTime.sh; git push"
+    "push": "./script/storePostTime.sh; git push",
+	"start": "hexo server"
   },
   "hexo": {
     "version": "4.2.1"
