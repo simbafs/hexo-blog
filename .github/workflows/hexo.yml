@@ -55,6 +55,15 @@ jobs:
       - name: list posts
         run: |
           hexo list post
-      - name: Deploy hexo
+      - name: Deploy to simba-fs.github.io
         run: |
           hexo deploy
+      - name: Deploy to vps
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.vpsHost }}
+          USERNAME: ${{ secrets.vpsUsername }}
+          PORT: ${{ secrets.vpsPort }}
+          KEY: ${{ secrets.vpsSSHKey }}
+          script: pwd
+     
