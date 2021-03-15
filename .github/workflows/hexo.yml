@@ -63,7 +63,7 @@ jobs:
         with:
           host: ${{ secrets.vpsHost }}
           USERNAME: ${{ secrets.vpsUsername }}
-          PORT: ${{ secrets.vpsPort }}
           KEY: ${{ secrets.vpsSSHKey }}
+          passphrase: ''
           script: pwd
      
