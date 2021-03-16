@@ -74,6 +74,6 @@ jobs:
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_PATH: ${{ secrets.VPS_PATH }}
         run: |
-          git remote add vps ssh://$VPS_USER@$VPS/$VPS_PATH
+          git remote add vps ssh://simba@172.104.104.31/home/simba/webwite/blog
           cat .git/config
           git push vps master
