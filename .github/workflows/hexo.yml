@@ -73,4 +73,5 @@ jobs:
       - name: Deploy to vps
         run: |
           git remote add vps ssh://$VPS_USER@$VPS/$VPS_PATH
+          cat .git/config
           git push vps master
