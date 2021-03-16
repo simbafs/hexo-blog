@@ -16,13 +16,17 @@ jobs:
       - name: Configuration environment
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          BLOG_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
         run: |
           ls -l source/_posts/
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+          echo "$BLOG_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/blog_id_rsa
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/blog_id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-keyscan 172.104.104.31 >> ~/.ssh/known_hosts
       - name: git config
         env:
           username: simba-fs
@@ -40,6 +44,7 @@ jobs:
         env: 
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           PASSPHRASE: ${{ secrets.PASSPHRASE }}
+          
       - name: Update themes
         run: |
           git submodule init
@@ -52,28 +57,6 @@ jobs:
         run: |
           ./script/recorverDate.sh
           hexo generate
-      - name: list posts
-        run: |
-          hexo list post
       - name: Deploy to github.io
         run: |
           hexo deploy
-      - name: Configuration environment
-        env:
-          DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
-          VPS: ${{ secrets.VPS }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
-          echo "$DEPLOY_KEY"
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan $VPS >> ~/.ssh/known_hosts    
-      - name: Deploy to vps
-        env:
-          VPS: ${{ secrets.VPS }}
-          VPS_USER: ${{ secrets.VPS_USER }}
-          VPS_PATH: ${{ secrets.VPS_PATH }}
-        run: |
-          git remote add vps ssh://simba@172.104.104.31/home/simba/webwite/blog
-          cat .git/config
-          git push vps master
