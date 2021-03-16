@@ -128,5 +128,5 @@ deploy:
     - type: git
       repo: git@github.com:simba-fs/simba-fs.github.io.git
     - type: git
-      repo: simba@172.104.104.31/home/simba/website/blog
+      repo: simba@172.104.104.31:/home/simba/website/blog
 
