@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "push": "./script/storePostTime.sh; git push",
-    "start": "hexo server"
+    "start": "hexo server -p 5689"
   },
   "hexo": {
     "version": "5.4.0"
