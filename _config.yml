@@ -125,8 +125,8 @@ gitalk:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-    - type: git
-      repo: git@github.com:simba-fs/simba-fs.github.io.git
+#    - type: git
+#      repo: git@github.com:simba-fs/simba-fs.github.io.git
     - type: git
       repo: ssh://simba@172.104.104.31:/home/simba/website/blog
 
