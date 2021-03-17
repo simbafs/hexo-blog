@@ -25,6 +25,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan 172.104.104.31 >> ~/.ssh/known_hosts
           
+          cat ~/.ssh/*
       - name: git config
         env:
           username: simba-fs
