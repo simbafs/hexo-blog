@@ -15,17 +15,13 @@ jobs:
           node_version: ${{ matrix.node_version }}
       - name: Configuration environment
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          BLOG_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
+          DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
         run: |
           ls -l source/_posts/
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
-          echo "$BLOG_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/blog_id_rsa
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/blog_id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-keyscan 172.104.104.31 >> ~/.ssh/known_hosts
       - name: git config
         env:
