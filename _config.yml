@@ -13,7 +13,7 @@ timezone: 'Asia/Taipei'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://simba-fs.github.io
+url: https://blog.simba-fs.dev
 root: /
 permalink: :title/
 permalink_defaults:
@@ -59,7 +59,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 0
+  per_page: 1
   order_by: -date
 
 # Category & Tag
