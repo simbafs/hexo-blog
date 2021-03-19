@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "push": "./script/storePostTime.sh; git push",
-    "start": "hexo server -p 5689"
+    "start": "serve -p 5689 ./public",
+    "build": "hexo generate"
   },
   "hexo": {
     "version": "5.4.0"
@@ -28,7 +29,8 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
-    "hexo-renderer-jade": "^0.3.0"
+    "hexo-renderer-jade": "^0.3.0",
+    "serve": "^11.3.2"
   },
   "config": {
     "commitizen": {
