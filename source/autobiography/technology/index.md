@@ -21,3 +21,7 @@ date: 2021-03-07 15:59:00
 
 # 程式
 從國中開始我就有自學程式，高一時開始接觸網頁伺服器相關的軟體，我在網路上學習了關於前端的 jQuery、HTML5、reactjs，還有後端 nodejs，資料庫相關的 mongodb、sqlite 等等也有涉略，我的作品都放在 GitHub （ https://github.com/simba-fs ）上。另外我也嘗試過使用 jobnny-five 來讓 nodejs 伺服器可以透過 serial port 讀取、操作 Arduino，剛好再結合 nodejs 前後端的技術就可以做成一個小型的物連網了。
+
+---
+
+[自傳(pdf)](./docs/autobiography.pdf)
