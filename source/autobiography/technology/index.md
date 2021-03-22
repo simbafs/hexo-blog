@@ -24,4 +24,4 @@ date: 2021-03-07 15:59:00
 
 ---
 
-[自傳(pdf)](./docs/autobiography.pdf)
+[自傳(pdf)](./technology/docs/autobiography.pdf)

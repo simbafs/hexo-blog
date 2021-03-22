@@ -48,10 +48,10 @@ Scratch 是我接觸的第一個程式語言。還記得當時看到一顆小球
 
 ---
 
-[自傳(pdf)](./docs/autobiography.pdf)
+[自傳(pdf)](./cs/docs/autobiography.pdf)
 
-[簡介](./introduce.html)
-[申請動機](./applyMotiv.html)
-[學習計劃](./studyPlan.html)
-[其他有利資料](./others.html)
+[簡介](./cs/introduce.html)
+[申請動機](./cs/applyMotiv.html)
+[學習計劃](./cs/studyPlan.html)
+[其他有利資料](./cs/others.html)
 [Google Drive](https://drive.google.com/drive/folders/1XzGUj6r_uHXHeu4YsjgJrfocU4JN97yf?usp=sharing)
