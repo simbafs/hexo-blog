@@ -59,12 +59,11 @@ jobs:
       - name: copy file via ssh password
         uses: appleboy/scp-action@master
         with:
-          host: simba-fs.dev
-          username: simba
+          host: simba@simba-fs.dev
           password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.DEPLOY_KEY }}
           source: "."
-          target: "testtest"
+          target: "website/blog"
           
           
           
