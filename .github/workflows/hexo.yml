@@ -16,16 +16,13 @@ jobs:
           
       - name: Configuration environment
         env:
-          DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          ls -l source/_posts/
           mkdir -p ~/.ssh/
           echo "$DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
           echo "$DEPLOY_KEY"
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan 172.104.104.31 >> ~/.ssh/known_hosts
-          
-          cat ~/.ssh/*
       - name: git config
         env:
           username: simba-fs
@@ -59,7 +56,14 @@ jobs:
         run: |
           ./script/recorverDate.sh
           hexo generate
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v2.1.6
+        env:
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          SOURCE: "./public/"
+          TARGET: ${{ secrets.TARGET }}
           
-      - name: Deploy
-        run: |
-          hexo deploy
+          
+          
