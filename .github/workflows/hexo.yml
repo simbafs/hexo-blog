@@ -56,15 +56,14 @@ jobs:
         run: |
           ./script/recorverDate.sh
           hexo generate
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "."
-          target: ${{ secrets.TARGET }}
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v2.1.6
+        env:
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          SOURCE: "."
+          TARGET: ${{ secrets.TARGET }}
           
           
           
