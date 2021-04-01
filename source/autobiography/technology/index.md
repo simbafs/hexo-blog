@@ -25,3 +25,4 @@ date: 2021-03-07 15:59:00
 ---
 
 [自傳(pdf)](./technology/docs/autobiography.pdf)
+[color](https://coolors.co/ff595e-ffca3a-8ac926-1982c4-6a4c93)
