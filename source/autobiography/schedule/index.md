@@ -10,5 +10,5 @@
 
 > [成大公告](http://adms.acad.ncku.edu.tw/)  
 > [成大物理報名系統](https://campus4.ncku.edu.tw/wwwmenu/program/net/door/)  
-> [市北大報名 「招生資訊」→「個人申請入學」](http://www.utaipei.edu.tw)  
+> [市北大報名 「招生資訊」→「個人申請入學」](http://exam.utaipei.edu.tw/enroll/index.jsp?enrollid=03)  
 > [北科報名](https://highschool.ntut.edu.tw)
