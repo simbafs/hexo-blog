@@ -5,8 +5,7 @@ date: 2020-02-10 17:25:29
 
 # 🖐️ 哈囉！問世界安好
 我目前是一個高中生，讀書閒暇時間會開發一些小專案。  
-在 [成功高中電子計算機研習社](https://ckcsc.net) 擔任 `退休網管兼教學`  
-[![Followers](https://img.shields.io/github/followers/simba-fs?style=flat-square)](https://github.com/simba-fs)
+在 [成功高中電子計算機研習社](https://ckcsc.net) 擔任 `退休網管兼教學` [![Followers](https://img.shields.io/github/followers/simba-fs?style=flat-square)](https://github.com/simba-fs)
 
 - 本名: 陳宏彰
 - 其他稱呼: simba-fs
