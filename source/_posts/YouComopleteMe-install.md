@@ -21,7 +21,7 @@ Plug 'Valloric/YouCompleteMe'
 
 
 # 編譯
-1. 執行 `sudo apt install python-dev`
+1. 執行 `sudo apt install python3-dev build-essential`
 2. 進入 `~/.vim/plugged/YouCompleteMe` 
 3. 執行 `./install.py --help` 並挑選需要的選項
 4. 執行 `./install.py <你要的選項>`
