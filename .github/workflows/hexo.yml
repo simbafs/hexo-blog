@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js v14.15.0
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14
         uses: actions/setup-node@v1
         with:
-          node_version: v14.15.0
+          node_version: 14
           
       - name: Configuration environment
         env:
