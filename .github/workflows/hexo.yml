@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node_version }}
+      - name: Use Node.js v14.15.0
         uses: actions/setup-node@v1
         with:
-          node_version: ${{ matrix.node_version }}
+          node_version: v14.15.0
           
       - name: Configuration environment
         env:
