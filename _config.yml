@@ -5,7 +5,7 @@
 # Site
 title: Simba Fs' Blog
 subtitle: ''
-description: 'Debug 剩下的的蟲子屍體'
+description: ''
 keywords: 
 author: Simba Fs
 language: zh-TW
@@ -78,7 +78,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+updated_option: date
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -101,12 +101,17 @@ feed:
   path: atom.xml
   limit: 20
 
+auto_category:
+  enable: true
+  depth: 2
+
 
 # sitemap
 sitemap:
   path: sitemap.xml
 
 ## Themes: https://hexo.io/themes/
+# theme: landscape
 # theme: hexo-theme-replica
 theme: next
 
