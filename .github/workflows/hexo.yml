@@ -52,18 +52,18 @@ jobs:
           npm i -g hexo-cli
           npm i
           
-      - name: Generate hexo
+      - name: Generate and deploy hexo
         run: |
           ./script/recorverDate.sh
-          hexo generate
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v2.1.6
-        env:
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-          SOURCE: "./public/"
-          TARGET: ${{ secrets.TARGET }}
+          hexo d -g
+      #- name: ssh deploy
+      #  uses: easingthemes/ssh-deploy@v2.1.6
+      #  env:
+      #    REMOTE_HOST: ${{ secrets.HOST }}
+      #    REMOTE_USER: ${{ secrets.USERNAME }}
+      #    SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+      #    SOURCE: "./public/"
+      #    TARGET: ${{ secrets.TARGET }}
           
           
           
