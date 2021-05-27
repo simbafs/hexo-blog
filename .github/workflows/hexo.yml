@@ -59,11 +59,11 @@ jobs:
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.1.6
         env:
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
+          REMOTE_HOST: simba-fs
+          REMOTE_USER: simba
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
           SOURCE: "./public/"
-          TARGET: ${{ secrets.TARGET }}
+          TARGET: /home/simba/website/blog
           
           
           
