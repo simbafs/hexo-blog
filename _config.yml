@@ -129,9 +129,18 @@ gitalk:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  - type: git
-    repo: simba@simba-fs.dev:~/website/blog
+# deploy:
+  # - type: git
+  #   repo: simba@simba-fs.dev:~/website/blog
     #- type: git
     #  repo: simba@simba-fs.dev:/home/simba/website/blog
+deploy:
+  type: rsync
+  host: simba-fs.dev
+  user: simba
+  root: /home/simba/website/blog
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: true
 
