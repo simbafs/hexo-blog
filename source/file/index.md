@@ -1,6 +1,8 @@
 ---
-title: pdf
-date: 2021-03-24 22:48:36
+title: file
+date: 2021-05-30 17:13:18
 ---
-
-[Infinite Jumper in Phaser 3 with modern JavaScript](./pdf/phaser.pdf)  
+[DesigningWebAPIs.pdf](/file/DesigningWebAPIs.pdf)  
+[nginx-cookbook.pdf](/file/nginx-cookbook.pdf)  
+[phaser.pdf](/file/phaser.pdf)  
+[vim-error.gif](/file/vim-error.gif)  
