@@ -105,6 +105,41 @@ auto_category:
   enable: true
   depth: 2
 
+# PWA
+pwa:
+  manifest:
+    path: /manifest.json
+    body:
+      name: Simba's Blog
+      short_name: Simba-Fs
+      icons:
+        - src: /images/icon/icon-192.png
+          sizes: 192x192
+          type: image/png
+        - src: /images/icon/icon-512.png
+          sizes: 512x512
+          type: image/png
+          purpose: 'any maskable'
+      start_url: /index.html
+      theme_color: '#4a9bff'
+      background_color: '#4a9bff'
+      display: standalone
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+      posts: 5
+    opts:
+      networkTimeoutSeconds: 10
+    routes:
+      - pattern: '!!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/'
+        strategy: cacheFirst
+      - pattern: '!!js/regexp /\//'
+        strategy: networkFirst
+  priority: 5
+
+all_minifier: true
 
 # sitemap
 sitemap:
