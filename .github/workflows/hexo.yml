@@ -56,14 +56,6 @@ jobs:
         run: |
           ./script/recorverDate.sh
           hexo g
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v2.1.6
-        env:
-          REMOTE_HOST: simba-fs.dev
-          REMOTE_USER: simba
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-          SOURCE: "./public/"
-          TARGET: /home/simba/website/blog
-          
-          
-          
+      - name: Deploy
+        run: |
+          hexo d
