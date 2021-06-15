@@ -3,13 +3,22 @@
 # See: https://theme-next.org/docs/getting-started/
 # ---------------------------------------------------------------
 
+# Console reminder if new version released.
+reminder: true
+
+# Remove unnecessary files after hexo generate.
+minify: true
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# See: https://theme-next.org/docs/getting-started/
+# ---------------------------------------------------------------
+
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
+  small: /images/icon/icon-16.png
+  medium: /images/icon/icon-32.png
+  apple_touch_icon: /images/icon/icon.png
+  safari_pinned_tab: /images/icon/icon.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -95,11 +104,6 @@ social_icons:
   icons_only: true
   transition: false
 
-
-# Read more button
-# If true, the read more button will be displayed in excerpt section.
-read_more_btn: true
-
 # Post meta display settings
 post_meta:
   item_text: true
@@ -160,12 +164,6 @@ bookmark:
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
-
-# `Follow me on GitHub` banner in the top-right corner.
-github_banner:
-  enable: true
-  permalink: https://github.com/simba-fs
-  title: Follow me on GitHub
 
 
 # ---------------------------------------------------------------
