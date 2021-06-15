@@ -141,6 +141,12 @@ pwa:
 
 all_minifier: true
 
+excerpt:
+  depth: 5
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
+
 # sitemap
 sitemap:
   path: sitemap.xml
