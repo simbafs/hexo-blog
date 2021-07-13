@@ -1,9 +1,10 @@
 ---
 title: taiwan-town-location
-date: 2021-06-24 10:59:08
 tags:
-- taiwna
-- geolocation
+  - taiwna
+  - geolocation
+categories: []
+date: 2021-06-24 10:59:08
 ---
 
 這是一個給經緯度吐地址的 api，甚至路段都會出來，搭配 [web geolocation api](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation_API) 蠻不錯的，精確度不錯。可以不知道有沒有 rate limited 的問題，目前看起來連 token 都不用。
